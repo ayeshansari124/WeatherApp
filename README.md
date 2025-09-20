@@ -1,58 +1,36 @@
-# ⛅ Weather App
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-A sleek and fully responsive **Weather App** built using **HTML**, **Tailwind CSS**, and **JavaScript**.  
-It fetches real-time weather data from the **OpenWeatherMap API** and displays it in a modern, minimalist UI.
+## Getting Started
 
----
+First, run the development server:
 
-## 📌 Summary
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-- Rebuilt using **Tailwind CSS** for better scalability and responsive design
-- Integrated real-time weather data with the **OpenWeatherMap API**
-- Strengthened skills in **DOM manipulation**, **async/await**, and **API integration**
-- Enhanced project with **utility-first CSS** practices
-- **Suggestions and contributions are most welcome!**
-- Another step forward in my web development journey 🚀
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
----
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-## 🚀 Deployment
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-🔗 [Live Demo on Netlify](https://ayeshasweatherapp.netlify.app/)
+## Learn More
 
----
+To learn more about Next.js, take a look at the following resources:
 
-## ⚙️ Features
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-- 🔍 **Real-time weather** data for any city
-- 🌡️ Displays **temperature, weather condition, and city name**
-- 🧭 Fetches data using the **OpenWeatherMap API**
-- ⚠️ Gracefully handles **invalid input** or API errors
-- 🎨 **Tailwind-powered** minimal UI
-- 📱 Fully **responsive** layout across all screen sizes
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
----
+## Deploy on Vercel
 
-## 🛠 Technologies Used
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-- **HTML5** – Semantic structure of the web page
-- **Tailwind CSS** – Utility-first framework for styling and layout
-- **JavaScript (ES6+)** – For API requests, event handling, and DOM updates
-
----
-
-## 📱 Responsiveness
-
-- Optimized for **mobile**, **tablet**, and **desktop** viewing
-- Fully responsive design using Tailwind's utility classes
-
----
-
-## 🙏 Acknowledgements
-
-- Powered by the amazing **OpenWeatherMap API**
-- Inspired by clean and modern weather app designs
-
----
-
-&copy; 2025 **Weather App** – Built with ☁️ and 💻 for educational purposes only.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
