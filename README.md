@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ⛅ Weather App – Next.js + TypeScript + Tailwind
 
-## Getting Started
+A **modern weather forecast app** built with **Next.js, TypeScript, and Tailwind CSS**.  
+It fetches **real-time weather data** using the **OpenWeather API**, providing a clean and responsive UI for checking city-based weather.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 📌 Summary
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This is a **Next.js + TypeScript project** styled with **Tailwind CSS**.  
+It demonstrates:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **App Router structure** in Next.js 13+  
+- **TypeScript for type safety**  
+- **Utility-first styling** with Tailwind  
+- **API integration** with `fetch`  
+- **Clean UI with responsive design**  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 💻 Features
 
-To learn more about Next.js, take a look at the following resources:
+✅ Search for **any city worldwide** 🌍  
+✅ Fetch **real-time weather data** (temperature, description, icon)  
+✅ **Input validation** with error messages  
+✅ **Reusable component structure**  
+✅ Fully **responsive design** with Tailwind CSS  
+✅ Smooth transitions and modern UI  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🛠️ Tech Stack
 
-## Deploy on Vercel
+- **Next.js 13+ (App Router)** – Fullstack React framework  
+- **TypeScript** – Strongly typed components and API handling  
+- **Tailwind CSS** – Styling and responsive layouts  
+- **OpenWeather API** – Weather data provider  
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🚀 Deployment
+
+🔗 [Live Site on Vercel](https://your-weather-app.vercel.app/)  
+
+(Replace with your actual deployed link)
+
+---
+
+## 🧩 Upcoming Features
+
+- 🌡️ **5-day forecast view**  
+- 📍 **Geolocation support** (auto-detect user location)  
+- 🎨 **Dark mode toggle**  
+- 💾 Save favorite cities locally  
+- 📊 Advanced UI with charts (temperature trends)  
+
+---
+
+## 📝 License
+
+This project is for **educational/demo purposes only**.  
+Weather data is provided by [OpenWeather](https://openweathermap.org/).
+
+---
+
+Built with ❤️ by **Ayesha Ali** while learning Next.js, TypeScript, and Tailwind.
