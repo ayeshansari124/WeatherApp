@@ -40,7 +40,7 @@ It demonstrates:
 
 ## 🚀 Deployment
 
-🔗 [Live Site on Vercel](https://ayeshaas-wa.netlify.app/)  
+🔗 [Live Site on Netlify](https://ayeshaas-wa.netlify.app/)  
 
 
 ---
