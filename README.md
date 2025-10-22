@@ -40,9 +40,8 @@ It demonstrates:
 
 ## 🚀 Deployment
 
-🔗 [Live Site on Vercel](https://your-weather-app.vercel.app/)  
+🔗 [Live Site on Vercel](https://ayeshaas-wa.netlify.app/)  
 
-(Replace with your actual deployed link)
 
 ---
 
