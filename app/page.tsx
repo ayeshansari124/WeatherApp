@@ -32,28 +32,43 @@ export default function Home() {
   }
 
   return (
-    <div className="flex items-center justify-center h-screen bg-gradient-to-br from-blue-300 to-blue-100 font-sans">
-      <div className="bg-white p-6 rounded-xl shadow-lg text-center w-full max-w-md">
-        <h1 className="text-2xl font-semibold mb-4 text-black">Weather App</h1>
-        <input
-          type="text"
-          placeholder="Enter City"
-          value={city}
-          onChange={(e) => setCity(e.target.value)}
-          className="w-full p-2 text-base rounded-lg border border-gray-300 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-400 text-black"
-        />
-        <button
-          onClick={getWeather}
-          className="w-full p-2 text-base rounded-lg bg-green-600 text-white hover:bg-green-700 transition duration-200"
-        >
-          Get Weather
-        </button>
+    <main className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-blue-300 to-blue-100 p-6 font-sans">
+      <div className="bg-white/90 backdrop-blur-lg w-full max-w-sm sm:max-w-md rounded-2xl shadow-lg p-6 sm:p-8 text-center">
+        <h1 className="text-2xl sm:text-3xl font-bold text-blue-800 mb-6">
+          ☀️ Weather App
+        </h1>
 
-        <div className="mt-4 text-base text-black">
-          {error && <p className="text-red-500">{error}</p>}
+        {/* Input and button stack vertically on phones */}
+        <div className="flex flex-col sm:flex-row gap-3 mb-5">
+          <input
+            type="text"
+            placeholder="Enter city name"
+            value={city}
+            onChange={(e) => setCity(e.target.value)}
+            className="flex-1 px-4 py-2 text-base rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 text-gray-800 w-full"
+          />
+          <button
+            onClick={getWeather}
+            className="px-4 py-2 sm:px-5 sm:py-2 rounded-lg bg-green-600 text-white font-medium hover:bg-green-700 active:scale-95 transition w-full sm:w-auto"
+          >
+            Get Weather
+          </button>
+        </div>
+
+        {/* Weather or error section */}
+        <div className="text-base text-gray-800">
+          {error && (
+            <p className="text-red-500 bg-red-50 p-2 rounded-md text-sm mb-2">
+              {error}
+            </p>
+          )}
           {weather && <WeatherCard data={weather} />}
         </div>
       </div>
-    </div>
+
+      <footer className="mt-6 text-gray-700 text-sm opacity-75">
+        Built with ❤️ by <span className="font-medium">Ayesha</span>
+      </footer>
+    </main>
   );
 }
