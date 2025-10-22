@@ -1,10 +1,24 @@
 "use client";
+
 import { useState } from "react";
 import WeatherCard from "../components/WeatherCard";
 
+export type WeatherData = {
+  name: string;
+  main: {
+    temp: number;
+    feels_like: number;
+    humidity: number;
+  };
+  weather: {
+    description: string;
+    icon: string;
+  }[];
+};
+
 export default function Home() {
   const [city, setCity] = useState("");
-  const [weather, setWeather] = useState<any>(null);
+  const [weather, setWeather] = useState<WeatherData | null>(null);
   const [error, setError] = useState<string | null>(null);
 
   const apiKey = "0e628bd641b408f9bb831d9897518f0e";
@@ -22,11 +36,12 @@ export default function Home() {
       );
       if (!res.ok) throw new Error("City not found");
 
-      const data = await res.json();
+      const data: WeatherData = await res.json();
       setWeather(data);
       setError(null);
-    } catch (err: any) {
-      setError(err.message);
+    } catch (err: unknown) {
+      if (err instanceof Error) setError(err.message);
+      else setError("An unknown error occurred");
       setWeather(null);
     }
   }
@@ -38,7 +53,6 @@ export default function Home() {
           ☀️ Weather App
         </h1>
 
-        {/* Input and button stack vertically on phones */}
         <div className="flex flex-col sm:flex-row gap-3 mb-5">
           <input
             type="text"
@@ -55,7 +69,6 @@ export default function Home() {
           </button>
         </div>
 
-        {/* Weather or error section */}
         <div className="text-base text-gray-800">
           {error && (
             <p className="text-red-500 bg-red-50 p-2 rounded-md text-sm mb-2">
